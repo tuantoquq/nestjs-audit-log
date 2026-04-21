@@ -13,7 +13,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
-   "publishConfig": {
+  "publishConfig": {
     "access": "public"
   },
   "exports": {
