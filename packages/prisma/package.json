@@ -1,0 +1,37 @@
+{
+  "name": "@nestjs-audit-log/prisma",
+  "version": "0.0.1",
+  "description": "Prisma storage adapter for @nestjs-audit-log/core.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint src test",
+    "test": "jest --config jest.config.ts",
+    "test:int": "jest --config jest.config.ts --runInBand --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "@nestjs-audit-log/core": "^0.0.1",
+    "@prisma/client": ">=5.0.0 <8.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@nestjs-audit-log/core": "workspace:*"
+  }
+}

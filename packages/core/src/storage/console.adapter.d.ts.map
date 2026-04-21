@@ -1,0 +1,1 @@
+{"version":3,"file":"console.adapter.d.ts","sourceRoot":"","sources":["console.adapter.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,mBAAmB,EAAE,MAAM,mBAAmB,CAAC;AAExD,qBACa,mBAAoB,YAAW,mBAAmB;IAC7D,IAAI,CAAC,MAAM,EAAE,MAAM,CAAC,MAAM,EAAE,OAAO,CAAC,GAAG,OAAO,CAAC,IAAI,CAAC;CAIrD"}

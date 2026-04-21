@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+.turbo/
+
+packages/*/dist/
+packages/*/.turbo/
+
+examples/*/node_modules/
+examples/*/dist/
+
+*.log
+pnpm-debug.log*
+
+# Unpublic docs
+docs/superpowers/

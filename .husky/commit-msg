@@ -1,0 +1,22 @@
+commit_msg_file="$1"
+commit_msg="$(head -n 1 "$commit_msg_file")"
+
+valid_pattern='^(fix|docs|chore|test|refactor|perf|ci|build|release|revert):.+$|^feat/[a-z0-9][a-z0-9._-]*:.+$'
+
+if ! printf '%s\n' "$commit_msg" | grep -Eq "$valid_pattern"; then
+  echo "Invalid commit message: $commit_msg"
+  echo ""
+  echo "Allowed formats:"
+  echo "  fix:<message>"
+  echo "  feat/<new_feature>:<message>"
+  echo "  docs:<message>"
+  echo "  chore:<message>"
+  echo "  test:<message>"
+  echo "  refactor:<message>"
+  echo "  perf:<message>"
+  echo "  ci:<message>"
+  echo "  build:<message>"
+  echo "  release:<message>"
+  echo "  revert:<message>"
+  exit 1
+fi

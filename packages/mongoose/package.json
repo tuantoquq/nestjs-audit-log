@@ -1,0 +1,39 @@
+{
+  "name": "@nestjs-audit-log/mongoose",
+  "version": "0.0.1",
+  "description": "Mongoose storage adapter for @nestjs-audit-log/core.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint src test",
+    "test": "jest --config jest.config.ts",
+    "test:int": "jest --config jest.config.ts --runInBand --testMatch '**/*.int-spec.ts'",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "@nestjs-audit-log/core": "^0.0.1",
+    "@nestjs/mongoose": "^11.0.0",
+    "mongoose": "^9.4.1"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@nestjs-audit-log/core": "workspace:*",
+    "@testcontainers/mongodb": "^11.14.0"
+  }
+}
