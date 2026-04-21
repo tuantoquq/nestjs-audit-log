@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "Decorator-based audit logging for NestJS with user-defined schemas.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuantoquq/nestjs-audit-log.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/tuantoquq/nestjs-audit-log/tree/main/packages/core#readme",
+  "bugs": "https://github.com/tuantoquq/nestjs-audit-log/issues",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
