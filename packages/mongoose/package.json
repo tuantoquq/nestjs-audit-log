@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "Mongoose storage adapter for @nestjs-audit-log/core.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuantoquq/nestjs-audit-log.git",
+    "directory": "packages/mongoose"
+  },
+  "homepage": "https://github.com/tuantoquq/nestjs-audit-log/tree/main/packages/mongoose#readme",
+  "bugs": "https://github.com/tuantoquq/nestjs-audit-log/issues",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
