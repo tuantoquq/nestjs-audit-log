@@ -1,6 +1,6 @@
 {
   "name": "@nestjs-audit-log/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Decorator-based audit logging for NestJS with user-defined schemas.",
   "license": "MIT",
   "repository": {
